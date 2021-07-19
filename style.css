@@ -5,32 +5,23 @@
     padding:0;
     box-sizing: border-box;
     font-family:Barlow,sans-serif;
-    /* border:1px solid aqua; */
+    border:1px solid aqua;
 }
 
 .Tech_Education{
     background:rgb(173, 173, 173);
     width:100vw;
-    height:100vh;
     display: flex;
     justify-content: center;
     color:white;
     position:relative;
 }
+/* 
 .backg{
     position:fixed;
     top:0%;
     text-align: center;
     z-index:100;
-}
-.container{
-    margin-top:10rem;
-    width:80vw;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position:relative;
 }
 .backg h1{
     position:relative;
@@ -54,7 +45,7 @@
     background:#015301;
     border-right:0.25rem solid #00ff40;
     text-shadow: 0px 0px 5px #01a701,
-                 0px 0px 15px #015301;
+    0px 0px 15px #015301;
     overflow:hidden;
     animation:TechEdu 6s linear infinite;
 }
@@ -65,25 +56,32 @@
     70%,90%{
         width:100%;
     }
-    
+} */
+.container{
+    margin-top:10rem;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    position:relative;
+    flex-wrap: wrap;
 }
 .container .box{
-    width:60vw;
-    height:auto;
+    width:45%;
+    background: #fff;
+    margin:1rem;
+    padding:1rem 0w;
+    height:30rem;
     display:flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content:center;
     align-items:center;
 }
-.container .box:nth-child(odd){
-    flex-direction:row;
-}
-.container .box:nth-child(even){
-flex-direction:row-reverse;
-}
 .box .boxcontent{
-    width:60%;
+    width:80%;
     background:#272822;
-    padding:2rem 2vw 1rem 4vw;
+    padding:0rem 0vw 0rem 2vw;
     margin:5rem 2vw;
     position:relative;
     z-index:3;
@@ -117,7 +115,30 @@ flex-direction:row-reverse;
     background:rgb(68, 68, 68);
     z-index:4;
 }
+.box .boxcontent p{
+    width:8px;
+    height:8px;
+    z-index:10;
+    border-radius:50%;
+    display:inline;
+    position:absolute;
+    top:-0.25rem;
+}
+.box .boxcontent p:nth-child(1){
+    left:1rem;
+    background:red;
+}
+.box .boxcontent p:nth-child(2){
+    left:1.8rem;
+    background:rgb(214, 214, 57);
+}
+.box .boxcontent p:nth-child(3){
+    left:2.6rem;
+    background:green;
+}
+.box .logo{
+}
 .box .logo img{
-    width:50px;
+    width:15vw;
 }
 
