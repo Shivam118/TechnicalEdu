@@ -168,3 +168,17 @@
 .box:nth-child(3):hover .logo img{
     width:20vw;
 }
+@media (min-width:250px) and (max-width:600px){
+    .container .box{
+        height:15rem;
+    }
+    .box .logo{
+        margin-top:15rem;
+    }   
+.box:nth-child(3):hover .logo img{
+    width:25vw;
+    }
+    .box:nth-child(3) .boxcontent{
+        margin-top:2rem;
+    }
+}
