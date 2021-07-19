@@ -10,15 +10,15 @@
     <title>Tech Cards</title>
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <div class="Tech_Education">
         <div class="backg">
-            <!-- <h1 data-text="Technical&nbsp;Education">Technical&nbsp;Education</h1> -->
+            <h1 data-text="Technical&nbsp;Education">Technical&nbsp;Education</h1>
         </div>
         <div class="container">
             <div class="box">
                 <div class="logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"
+                    <img src="python.png"
                         alt="python">
                 </div>
                 <div class="boxcontent"> 
@@ -26,9 +26,9 @@
                     <p></p>
                     <p></p>
                     <pre><code class="language-py language-python"> #Python 3.8.2
-                        
+
 def pythonCode(MyName):   #Python Function
-&nbsp;&nbsp;&nbsp;&nbsp;return print("Hello World!" + MyName);
+&nbsp;&nbsp;&nbsp;&nbsp;return print("Hello " + MyName);
 
 
 MyName = "Shivam Sharma"
@@ -37,14 +37,14 @@ pythonCode(MyName)</code></pre>
             </div>
             <div class="box">
                 <div class="logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                    <img src="cpp.png"
                         alt="python">
                 </div>
                 <div class="boxcontent">
                     <p></p>
                     <p></p>
                     <p></p>
-                    <pre><code class="language-cpp">
+                    <pre><code class="language-cpp">// C++
 #include&lt;iostream.h&gt;
 #include&lt;studio.h&gt;
 
@@ -55,8 +55,70 @@ void main() {
                     </code></pre>
                 </div>
             </div>
+            <div class="box">
+                <div class="logo">
+                    <img src="js.png"
+                        alt="python">
+                </div>
+                <div class="boxcontent">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <pre><code class="language-html language-css-extras language-js-templates">&lt;!DOCTYPE HTML&gt;
+  &lt;head&gt;
+    &lt;title&gt;PortFolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/style&gt;&lt;style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script type="text/javascript" src="index.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;HTML&gt;                        
+</code></pre>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- <script type="text/javascript">
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        function disableCtrlKeyCombination(e) {
+            var forbiddenKeys = new Array("a", "s", "c", "x","u");
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                //IE
+                if (window.event.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which;
+                //firefox
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>

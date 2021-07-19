@@ -5,7 +5,7 @@
     padding:0;
     box-sizing: border-box;
     font-family:Barlow,sans-serif;
-    border:1px solid aqua;
+    /* border:1px solid aqua; */
 }
 
 .Tech_Education{
@@ -16,9 +16,9 @@
     color:white;
     position:relative;
 }
-/* 
+
 .backg{
-    position:fixed;
+    position:absolute;
     top:0%;
     text-align: center;
     z-index:100;
@@ -42,7 +42,6 @@
     font-weight:800;
     -webkit-text-stroke:0rem #747474;
     color:#00ff40;
-    background:#015301;
     border-right:0.25rem solid #00ff40;
     text-shadow: 0px 0px 5px #01a701,
     0px 0px 15px #015301;
@@ -56,30 +55,36 @@
     70%,90%{
         width:100%;
     }
-} */
+}
 .container{
     margin-top:10rem;
-    width:100vw;
+    width:90vw;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: space-around;
     flex-direction:row;
     position:relative;
     flex-wrap: wrap;
 }
 .container .box{
-    width:45%;
+    width:40%;
+    height:40rem;
     background: #fff;
-    margin:1rem;
+    margin:3rem 1rem 1rem 1rem;
     padding:1rem 0w;
-    height:30rem;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    border-radius:1rem;
+    box-shadow:0rem 0rem 1rem rgba(0,0,0,0.5);
+    transition:width 1s, height 1s,margin 1s;
+}
+.container .box:hover{
+    width:40%;
 }
 .box .boxcontent{
-    width:80%;
+    width:90%;
     background:#272822;
     padding:0rem 0vw 0rem 2vw;
     margin:5rem 2vw;
@@ -87,6 +92,13 @@
     z-index:3;
     border-bottom-left-radius:0.75rem;
     font-size:1.25vw;
+    visibility: hidden;
+    transition:1s;
+    opacity:0;
+}
+.box:hover .boxcontent{
+    visibility: visible;
+    opacity:1;
 }
 .box .boxcontent::before{
     content:'';
@@ -137,8 +149,22 @@
     background:green;
 }
 .box .logo{
+    margin-top:30rem;
+    transition:1s;
+}
+.box:hover .logo{
+    margin-top:0rem;
 }
 .box .logo img{
+    width:20vw;
+    transition: width 1s;;
+}
+.box:hover .logo img{
     width:15vw;
 }
-
+.box:nth-child(3) .logo img{
+    width:30vw;
+}
+.box:nth-child(3):hover .logo img{
+    width:20vw;
+}
